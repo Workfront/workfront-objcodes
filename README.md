@@ -27,13 +27,14 @@ console.log(Baseline)
 ```
 
 ```javascript
-import {ObjCodes} from 'workfront-objcodes'
+import * as ObjCodes from 'workfront-objcodes'
 
 // outputs 'BLIN'
 console.log(ObjCodes.Baseline)
 ```
 
 ```typescript
+// TypeScript type definitions are bundled
 import {TObjCode} from 'workfront-objcodes'
 
 // TS2322: Type '"FOO"' is not assignable to type 'TObjCode' 

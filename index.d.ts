@@ -15,8 +15,3 @@
  */
 
 export * from './typings/TObjCode'
-
-import {TObjCodes} from './typings/TObjCodes'
-export {TObjCodes}
-
-export declare const ObjCodes: TObjCodes
