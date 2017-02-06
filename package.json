@@ -1,0 +1,45 @@
+{
+  "name": "workfront-objcodes",
+  "version": "0.0.1",
+  "description": "Definitions for all constants which can be used to interact with Workfront API",
+  "main": "dist/objcodes.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "typings"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "commander": "2.9.0",
+    "got": "6.7.1",
+    "handlebars": "4.0.6",
+    "typescript": "2.1.5",
+    "url-parse": "1.1.7",
+    "validator": "6.2.1"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc --module umd --outDir dist/umd/ src/*.ts && tsc",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Workfront/workfront-api-constants.git"
+  },
+  "keywords": [
+    "Workfront",
+    "Constants",
+    "AtTask",
+    "API"
+  ],
+  "author": "Workfront",
+  "contributors": [
+    "Hovhannes Babayan <bhovhannes@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Workfront/workfront-api-constants/issues"
+  },
+  "homepage": "https://github.com/Workfront/workfront-api-constants"
+}

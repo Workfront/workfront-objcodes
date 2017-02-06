@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "target": "es5"
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
