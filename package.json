@@ -13,7 +13,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "typescript": "3.0.1"
+    "typescript": "3.0.3"
   },
   "scripts": {
     "prepublish": "npm run build",
