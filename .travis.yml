@@ -8,7 +8,6 @@ notifications:
     on_success: change
 
 node_js:
+  - "lts/*"
+  - "8"
   - "6"
-  - "4"
-  - "0.12"
-  - "0.10"
