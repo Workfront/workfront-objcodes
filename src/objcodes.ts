@@ -14,219 +14,433 @@
  * limitations under the License.
  */
 
-import {TObjCode} from '../typings/TObjCode'
+export const AccessLevel = 'ACSLVL' as const
+export const AccessLevelPermissions = 'ALVPER' as const
+export const AccessRequest = 'ACSREQ' as const
+export const AccessRule = 'ACSRUL' as const
+export const AccessRulePreference = 'ARPREF' as const
+export const AccessScope = 'ACSCP' as const
+export const AccessScopeAction = 'ASCPAT' as const
+export const AccessToken = 'ACSTOK' as const
+export const AccountRep = 'ACNTRP' as const
+export const Acknowledgement = 'ACK' as const
+export const AgileView = 'AGILEV' as const
+export const Announcement = 'ANCMNT' as const
+export const AnnouncementAttachment = 'ANMATT' as const
+export const AnnouncementOptOut = 'AMNTO' as const
+export const AnnouncementRecipient = 'ANCREC' as const
+export const AppBuild = 'APPBLD' as const
+export const AppEvent = 'APEVT' as const
+export const AppGlobal = 'APGLOB' as const
+export const AppInfo = 'APPINF' as const
+export const Approval = 'APPROVAL' as const
+export const ApprovalPath = 'ARVPTH' as const
+export const ApprovalProcess = 'ARVPRC' as const
+export const ApprovalProcessAttachable = 'APRPROCATCH' as const
+export const ApprovalStep = 'ARVSTP' as const
+export const ApproverStatus = 'ARVSTS' as const
+export const Assignment = 'ASSGN' as const
+export const AuditLoginAsSession = 'AUDS' as const
+export const Authentication = 'AUTH' as const
+export const Avatar = 'AVATAR' as const
+export const AwaitingApproval = 'AWAPVL' as const
+export const BackgroundJob = 'BKGJOB' as const
+export const Baseline = 'BLIN' as const
+export const BaselineTask = 'BSTSK' as const
+export const BillingRecord = 'BILL' as const
+export const Branding = 'BRND' as const
+export const BurndownEvent = 'BDNEVT' as const
+export const CalendarEvent = 'CALEVT' as const
+export const CalendarFeedEntry = 'CALITM' as const
+export const CalendarInfo = 'CALEND' as const
+export const CalendarPortalSection = 'CALPTL' as const
+export const CalendarSection = 'CALSEC' as const
+export const CallableExpression = 'CALEXP' as const
+export const CardField = 'LTMPLC' as const
+export const Category = 'CTGY' as const
+export const CategoryAccessRule = 'CATACR' as const
+export const CategoryCascadeRule = 'CTCSRL' as const
+export const CategoryCascadeRuleMatch = 'CTCSRM' as const
+export const CategoryParameter = 'CTGYPA' as const
+export const CategoryParameterExpression = 'CTGPEX' as const
+export const Company = 'CMPY' as const
+export const ComponentKey = 'CMPSRV' as const
+export const ContextSensitiveHelp = 'CXTHP' as const
+export const CrossProjectPredecessor = 'CPPRED' as const
+export const CustomEnum = 'CSTEM' as const
+export const CustomEnumOrder = 'CSTEMO' as const
+export const CustomLabel = 'LTMCL' as const
+export const CustomMenu = 'CSTMNU' as const
+export const CustomMenuCustomMenu = 'CMSCMS' as const
+export const CustomQuarter = 'CSTQRT' as const
+export const Customer = 'CUST' as const
+export const CustomerDeletion = 'CUSDEL' as const
+export const CustomerFeedback = 'CSFD' as const
+export const CustomerPreferences = 'CUSTPR' as const
+export const CustomerTimelineCalc = 'CPTC' as const
+export const CustsSections = 'CSTSEC' as const
+export const DocMetadataLink = 'DMETAL' as const
+export const DocMetadataLinkGroup = 'DMETAG' as const
+export const DocsFolders = 'DOCFLD' as const
+export const Document = 'DOCU' as const
+export const DocumentApproval = 'DOCAPL' as const
+export const DocumentFolder = 'DOCFDR' as const
+export const DocumentProvider = 'DOCPRO' as const
+export const DocumentProviderConfig = 'DOCCFG' as const
+export const DocumentProviderMetadata = 'DOCMET' as const
+export const DocumentRequest = 'DOCREQ' as const
+export const DocumentShare = 'DOCSHR' as const
+export const DocumentTaskStatus = 'DOCTSK' as const
+export const DocumentVersion = 'DOCV' as const
+export const Email = 'EMAILC' as const
+export const EmailTemplate = 'EMLTPL' as const
+export const Endorsement = 'ENDR' as const
+export const EndorsementShare = 'ENDSHR' as const
+export const EventHandler = 'EVNTH' as const
+export const EventSubscription = 'EVTSUB' as const
+export const EwsFileHandle = 'EWS' as const
+export const ExchangeRate = 'EXRATE' as const
+export const Expense = 'EXPNS' as const
+export const ExpenseType = 'EXPTYP' as const
+export const ExternalDocument = 'EXTDOC' as const
+export const ExternalSection = 'EXTSEC' as const
+export const Favorite = 'FVRITE' as const
+export const Feature = 'FEATR' as const
+export const FinancialData = 'FINDAT' as const
+export const Group = 'GROUP' as const
+export const Hour = 'HOUR' as const
+export const HourType = 'HOURT' as const
+export const IPRange = 'IPRAGE' as const
+export const ImportRow = 'IROW' as const
+export const ImportTemplate = 'ITMPL' as const
+export const InstalledDDItem = 'IDDI' as const
+export const Iteration = 'ITRN' as const
+export const JournalEntry = 'JRNLE' as const
+export const JournalField = 'JRNLF' as const
+export const KickStart = 'KSS' as const
+export const LayoutTemplate = 'LYTMPL' as const
+export const LayoutTemplateDatePreference = 'LTMPDP' as const
+export const LayoutTemplatePage = 'LTMPLP' as const
+export const LicenseOrder = 'LICEOR' as const
+export const Like = 'LIKE' as const
+export const LinkedFolder = 'LNKFDR' as const
+export const MasterTask = 'MTSK' as const
+export const MessageArg = 'MSGARG' as const
+export const MetaRecord = 'PRSTOBJ' as const
+export const Milestone = 'MILE' as const
+export const MilestonePath = 'MPATH' as const
+export const MobileDevice = 'MOBILDVC' as const
+export const NonWorkDay = 'NONWKD' as const
+export const Note = 'NOTE' as const
+export const NoteTag = 'NTAG' as const
+export const NotificationPreference = 'NOTPRF' as const
+export const NotificationRecord = 'TMNR' as const
+export const ObjectCategory = 'OBJCAT' as const
+export const OpTask = 'OPTASK' as const
+export const Parameter = 'PARAM' as const
+export const ParameterDescriptiveText = 'PRMDTX' as const
+export const ParameterGroup = 'PGRP' as const
+export const ParameterOption = 'POPT' as const
+export const ParameterValue = 'PVAL' as const
+export const PopAccount = 'POPA' as const
+export const PortalProfile = 'PTLPFL' as const
+export const PortalSection = 'PTLSEC' as const
+export const PortalTab = 'PTLTAB' as const
+export const PortalTabSection = 'PRTBSC' as const
+export const Portfolio = 'PORT' as const
+export const Predecessor = 'PRED' as const
+export const Preference = 'PROSET' as const
+export const PrivateCustomerPref = 'PCPREF' as const
+export const Program = 'PRGM' as const
+export const Project = 'PROJ' as const
+export const ProjectUser = 'PRTU' as const
+export const ProjectUserRole = 'PTEAM' as const
+export const Proof = 'PROOF' as const
+export const ProofApproval = 'PRFAPL' as const
+export const QueueDef = 'QUED' as const
+export const QueueTopic = 'QUET' as const
+export const QueueTopicGroup = 'QUETGP' as const
+export const Rate = 'RATE' as const
+export const Recent = 'RECENT' as const
+export const RecentMenuItem = 'RECENTMENUITEM' as const
+export const RecentUpdate = 'RUPDTE' as const
+export const RecurrenceRule = 'RECR' as const
+export const RemovedDocumentVersion = 'RMVDOV' as const
+export const ReportFolder = 'RPTFDR' as const
+export const Reseller = 'RSELR' as const
+export const ReservedTime = 'RESVT' as const
+export const ResourceAllocation = 'RSALLO' as const
+export const ResourceContour = 'RSCONT' as const
+export const ResourceManager = 'RESMGR' as const
+export const ResourcePool = 'RSPOOL' as const
+export const RsrcPool = 'RSPL' as const
+export const ResourceSchedulingFilter = 'RSFT' as const
+export const RestorableObject = 'RSTOBJ' as const
+export const Risk = 'RISK' as const
+export const RiskType = 'RSKTYP' as const
+export const Role = 'ROLE' as const
+export const RoutingRule = 'RRUL' as const
+export const S3Migration = 'S3MT' as const
+export const SSOMapping = 'SSOMAP' as const
+export const SSOMappingRule = 'SSOMR' as const
+export const SSOOption = 'SSOPT' as const
+export const SSOUsername = 'SSOUSR' as const
+export const SandboxMigration = 'SNDMG' as const
+export const Schedule = 'SCHED' as const
+export const ScheduledReport = 'SCHREP' as const
+export const ScoreCard = 'SCORE' as const
+export const ScoreCardAnswer = 'SCANS' as const
+export const ScoreCardOption = 'SCOPT' as const
+export const ScoreCardQuestion = 'SCOREQ' as const
+export const SearchEvent = 'SRCEVT' as const
+export const SecurityAncestor = 'SECANC' as const
+export const Sequence = 'SEQ' as const
+export const SharingSettings = 'SHRSET' as const
+export const StepApprover = 'SPAPVR' as const
+export const Task = 'TASK' as const
+export const Team = 'TEAMOB' as const
+export const TeamMember = 'TEAMMB' as const
+export const TeamMemberRole = 'TEAMMR' as const
+export const Template = 'TMPL' as const
+export const TemplateAssignment = 'TASSGN' as const
+export const TemplatePredecessor = 'TPRED' as const
+export const TemplateTask = 'TTSK' as const
+export const TemplateUser = 'TMTU' as const
+export const TemplateUserRole = 'TTEAM' as const
+export const TimedNotification = 'TMNOT' as const
+export const Timesheet = 'TSHET' as const
+export const TimesheetProfile = 'TSPRO' as const
+export const TimesheetTemplate = 'TSHTMP' as const
+export const UIFilter = 'UIFT' as const
+export const UIGroupBy = 'UIGB' as const
+export const UITemplate = 'UITMPL' as const
+export const UIView = 'UIVW' as const
+export const Update = 'UPDATE' as const
+export const User = 'USER' as const
+export const UserActivity = 'USERAC' as const
+export const UserAvailability = 'USRAVL' as const
+export const UserDelegation = 'USRDEL' as const
+export const UserGroups = 'USRGPS' as const
+export const UserNote = 'USRNOT' as const
+export const UserObjectPref = 'USOP' as const
+export const UserPrefValue = 'USERPF' as const
+export const UserResource = 'USERRS' as const
+export const UsersSections = 'USRSEC' as const
+export const Work = 'WORK' as const
+export const WorkItem = 'WRKITM' as const
 
-export const AccessLevel: TObjCode = 'ACSLVL'
-export const AccessLevelPermissions: TObjCode = 'ALVPER'
-export const AccessRequest: TObjCode = 'ACSREQ'
-export const AccessRule: TObjCode = 'ACSRUL'
-export const AccessRulePreference: TObjCode = 'ARPREF'
-export const AccessScope: TObjCode = 'ACSCP'
-export const AccessScopeAction: TObjCode = 'ASCPAT'
-export const AccessToken: TObjCode = 'ACSTOK'
-export const AccountRep: TObjCode = 'ACNTRP'
-export const Acknowledgement: TObjCode = 'ACK'
-export const AgileView: TObjCode = 'AGILEV'
-export const Announcement: TObjCode = 'ANCMNT'
-export const AnnouncementAttachment: TObjCode = 'ANMATT'
-export const AnnouncementOptOut: TObjCode = 'AMNTO'
-export const AnnouncementRecipient: TObjCode = 'ANCREC'
-export const AppBuild: TObjCode = 'APPBLD'
-export const AppEvent: TObjCode = 'APEVT'
-export const AppGlobal: TObjCode = 'APGLOB'
-export const AppInfo: TObjCode = 'APPINF'
-export const Approval: TObjCode = 'APPROVAL'
-export const ApprovalPath: TObjCode = 'ARVPTH'
-export const ApprovalProcess: TObjCode = 'ARVPRC'
-export const ApprovalProcessAttachable: TObjCode = 'APRPROCATCH'
-export const ApprovalStep: TObjCode = 'ARVSTP'
-export const ApproverStatus: TObjCode = 'ARVSTS'
-export const Assignment: TObjCode = 'ASSGN'
-export const AuditLoginAsSession: TObjCode = 'AUDS'
-export const Authentication: TObjCode = 'AUTH'
-export const Avatar: TObjCode = 'AVATAR'
-export const AwaitingApproval: TObjCode = 'AWAPVL'
-export const BackgroundJob: TObjCode = 'BKGJOB'
-export const Baseline: TObjCode = 'BLIN'
-export const BaselineTask: TObjCode = 'BSTSK'
-export const BillingRecord: TObjCode = 'BILL'
-export const Branding: TObjCode = 'BRND'
-export const BurndownEvent: TObjCode = 'BDNEVT'
-export const CalendarEvent: TObjCode = 'CALEVT'
-export const CalendarFeedEntry: TObjCode = 'CALITM'
-export const CalendarInfo: TObjCode = 'CALEND'
-export const CalendarPortalSection: TObjCode = 'CALPTL'
-export const CalendarSection: TObjCode = 'CALSEC'
-export const CallableExpression: TObjCode = 'CALEXP'
-export const CardField: TObjCode = 'LTMPLC'
-export const Category: TObjCode = 'CTGY'
-export const CategoryAccessRule: TObjCode = 'CATACR'
-export const CategoryCascadeRule: TObjCode = 'CTCSRL'
-export const CategoryCascadeRuleMatch: TObjCode = 'CTCSRM'
-export const CategoryParameter: TObjCode = 'CTGYPA'
-export const CategoryParameterExpression: TObjCode = 'CTGPEX'
-export const Company: TObjCode = 'CMPY'
-export const ComponentKey: TObjCode = 'CMPSRV'
-export const ContextSensitiveHelp: TObjCode = 'CXTHP'
-export const CrossProjectPredecessor: TObjCode = 'CPPRED'
-export const CustomEnum: TObjCode = 'CSTEM'
-export const CustomEnumOrder: TObjCode = 'CSTEMO'
-export const CustomLabel: TObjCode = 'LTMCL'
-export const CustomMenu: TObjCode = 'CSTMNU'
-export const CustomMenuCustomMenu: TObjCode = 'CMSCMS'
-export const CustomQuarter: TObjCode = 'CSTQRT'
-export const Customer: TObjCode = 'CUST'
-export const CustomerDeletion: TObjCode = 'CUSDEL'
-export const CustomerFeedback: TObjCode = 'CSFD'
-export const CustomerPreferences: TObjCode = 'CUSTPR'
-export const CustomerTimelineCalc: TObjCode = 'CPTC'
-export const CustsSections: TObjCode = 'CSTSEC'
-export const DocMetadataLink: TObjCode = 'DMETAL'
-export const DocMetadataLinkGroup: TObjCode = 'DMETAG'
-export const DocsFolders: TObjCode = 'DOCFLD'
-export const Document: TObjCode = 'DOCU'
-export const DocumentApproval: TObjCode = 'DOCAPL'
-export const DocumentFolder: TObjCode = 'DOCFDR'
-export const DocumentProvider: TObjCode = 'DOCPRO'
-export const DocumentProviderConfig: TObjCode = 'DOCCFG'
-export const DocumentProviderMetadata: TObjCode = 'DOCMET'
-export const DocumentRequest: TObjCode = 'DOCREQ'
-export const DocumentShare: TObjCode = 'DOCSHR'
-export const DocumentTaskStatus: TObjCode = 'DOCTSK'
-export const DocumentVersion: TObjCode = 'DOCV'
-export const Email: TObjCode = 'EMAILC'
-export const EmailTemplate: TObjCode = 'EMLTPL'
-export const Endorsement: TObjCode = 'ENDR'
-export const EndorsementShare: TObjCode = 'ENDSHR'
-export const EventHandler: TObjCode = 'EVNTH'
-export const EventSubscription: TObjCode = 'EVTSUB'
-export const EwsFileHandle: TObjCode = 'EWS'
-export const ExchangeRate: TObjCode = 'EXRATE'
-export const Expense: TObjCode = 'EXPNS'
-export const ExpenseType: TObjCode = 'EXPTYP'
-export const ExternalDocument: TObjCode = 'EXTDOC'
-export const ExternalSection: TObjCode = 'EXTSEC'
-export const Favorite: TObjCode = 'FVRITE'
-export const Feature: TObjCode = 'FEATR'
-export const FinancialData: TObjCode = 'FINDAT'
-export const Group: TObjCode = 'GROUP'
-export const Hour: TObjCode = 'HOUR'
-export const HourType: TObjCode = 'HOURT'
-export const IPRange: TObjCode = 'IPRAGE'
-export const ImportRow: TObjCode = 'IROW'
-export const ImportTemplate: TObjCode = 'ITMPL'
-export const InstalledDDItem: TObjCode = 'IDDI'
-export const Iteration: TObjCode = 'ITRN'
-export const JournalEntry: TObjCode = 'JRNLE'
-export const JournalField: TObjCode = 'JRNLF'
-export const KickStart: TObjCode = 'KSS'
-export const LayoutTemplate: TObjCode = 'LYTMPL'
-export const LayoutTemplateDatePreference: TObjCode = 'LTMPDP'
-export const LayoutTemplatePage: TObjCode = 'LTMPLP'
-export const LicenseOrder: TObjCode = 'LICEOR'
-export const Like: TObjCode = 'LIKE'
-export const LinkedFolder: TObjCode = 'LNKFDR'
-export const MasterTask: TObjCode = 'MTSK'
-export const MessageArg: TObjCode = 'MSGARG'
-export const MetaRecord: TObjCode = 'PRSTOBJ'
-export const Milestone: TObjCode = 'MILE'
-export const MilestonePath: TObjCode = 'MPATH'
-export const MobileDevice: TObjCode = 'MOBILDVC'
-export const NonWorkDay: TObjCode = 'NONWKD'
-export const Note: TObjCode = 'NOTE'
-export const NoteTag: TObjCode = 'NTAG'
-export const NotificationPreference: TObjCode = 'NOTPRF'
-export const NotificationRecord: TObjCode = 'TMNR'
-export const ObjectCategory: TObjCode = 'OBJCAT'
-export const OpTask: TObjCode = 'OPTASK'
-export const Parameter: TObjCode = 'PARAM'
-export const ParameterDescriptiveText: TObjCode = 'PRMDTX'
-export const ParameterGroup: TObjCode = 'PGRP'
-export const ParameterOption: TObjCode = 'POPT'
-export const ParameterValue: TObjCode = 'PVAL'
-export const PopAccount: TObjCode = 'POPA'
-export const PortalProfile: TObjCode = 'PTLPFL'
-export const PortalSection: TObjCode = 'PTLSEC'
-export const PortalTab: TObjCode = 'PTLTAB'
-export const PortalTabSection: TObjCode = 'PRTBSC'
-export const Portfolio: TObjCode = 'PORT'
-export const Predecessor: TObjCode = 'PRED'
-export const Preference: TObjCode = 'PROSET'
-export const PrivateCustomerPref: TObjCode = 'PCPREF'
-export const Program: TObjCode = 'PRGM'
-export const Project: TObjCode = 'PROJ'
-export const ProjectUser: TObjCode = 'PRTU'
-export const ProjectUserRole: TObjCode = 'PTEAM'
-export const Proof: TObjCode = 'PROOF'
-export const ProofApproval: TObjCode = 'PRFAPL'
-export const QueueDef: TObjCode = 'QUED'
-export const QueueTopic: TObjCode = 'QUET'
-export const QueueTopicGroup: TObjCode = 'QUETGP'
-export const Rate: TObjCode = 'RATE'
-export const Recent: TObjCode = 'RECENT'
-export const RecentMenuItem: TObjCode = 'RECENTMENUITEM'
-export const RecentUpdate: TObjCode = 'RUPDTE'
-export const RecurrenceRule: TObjCode = 'RECR'
-export const RemovedDocumentVersion: TObjCode = 'RMVDOV'
-export const ReportFolder: TObjCode = 'RPTFDR'
-export const Reseller: TObjCode = 'RSELR'
-export const ReservedTime: TObjCode = 'RESVT'
-export const ResourceAllocation: TObjCode = 'RSALLO'
-export const ResourceContour: TObjCode = 'RSCONT'
-export const ResourceManager: TObjCode = 'RESMGR'
-export const ResourcePool: TObjCode = 'RSPOOL'
-export const RsrcPool: TObjCode = 'RSPL'
-export const ResourceSchedulingFilter: TObjCode = 'RSFT'
-export const RestorableObject: TObjCode = 'RSTOBJ'
-export const Risk: TObjCode = 'RISK'
-export const RiskType: TObjCode = 'RSKTYP'
-export const Role: TObjCode = 'ROLE'
-export const RoutingRule: TObjCode = 'RRUL'
-export const S3Migration: TObjCode = 'S3MT'
-export const SSOMapping: TObjCode = 'SSOMAP'
-export const SSOMappingRule: TObjCode = 'SSOMR'
-export const SSOOption: TObjCode = 'SSOPT'
-export const SSOUsername: TObjCode = 'SSOUSR'
-export const SandboxMigration: TObjCode = 'SNDMG'
-export const Schedule: TObjCode = 'SCHED'
-export const ScheduledReport: TObjCode = 'SCHREP'
-export const ScoreCard: TObjCode = 'SCORE'
-export const ScoreCardAnswer: TObjCode = 'SCANS'
-export const ScoreCardOption: TObjCode = 'SCOPT'
-export const ScoreCardQuestion: TObjCode = 'SCOREQ'
-export const SearchEvent: TObjCode = 'SRCEVT'
-export const SecurityAncestor: TObjCode = 'SECANC'
-export const Sequence: TObjCode = 'SEQ'
-export const SharingSettings: TObjCode = 'SHRSET'
-export const StepApprover: TObjCode = 'SPAPVR'
-export const Task: TObjCode = 'TASK'
-export const Team: TObjCode = 'TEAMOB'
-export const TeamMember: TObjCode = 'TEAMMB'
-export const TeamMemberRole: TObjCode = 'TEAMMR'
-export const Template: TObjCode = 'TMPL'
-export const TemplateAssignment: TObjCode = 'TASSGN'
-export const TemplatePredecessor: TObjCode = 'TPRED'
-export const TemplateTask: TObjCode = 'TTSK'
-export const TemplateUser: TObjCode = 'TMTU'
-export const TemplateUserRole: TObjCode = 'TTEAM'
-export const TimedNotification: TObjCode = 'TMNOT'
-export const Timesheet: TObjCode = 'TSHET'
-export const TimesheetProfile: TObjCode = 'TSPRO'
-export const TimesheetTemplate: TObjCode = 'TSHTMP'
-export const UIFilter: TObjCode = 'UIFT'
-export const UIGroupBy: TObjCode = 'UIGB'
-export const UITemplate: TObjCode = 'UITMPL'
-export const UIView: TObjCode = 'UIVW'
-export const Update: TObjCode = 'UPDATE'
-export const User: TObjCode = 'USER'
-export const UserActivity: TObjCode = 'USERAC'
-export const UserAvailability: TObjCode = 'USRAVL'
-export const UserDelegation: TObjCode = 'USRDEL'
-export const UserGroups: TObjCode = 'USRGPS'
-export const UserNote: TObjCode = 'USRNOT'
-export const UserObjectPref: TObjCode = 'USOP'
-export const UserPrefValue: TObjCode = 'USERPF'
-export const UserResource: TObjCode = 'USERRS'
-export const UsersSections: TObjCode = 'USRSEC'
-export const Work: TObjCode = 'WORK'
-export const WorkItem: TObjCode = 'WRKITM'
+export type TObjCode =
+    | typeof AccessLevel
+    | typeof AccessLevelPermissions
+    | typeof AccessRequest
+    | typeof AccessRule
+    | typeof AccessRulePreference
+    | typeof AccessScope
+    | typeof AccessScopeAction
+    | typeof AccessToken
+    | typeof AccountRep
+    | typeof Acknowledgement
+    | typeof AgileView
+    | typeof Announcement
+    | typeof AnnouncementAttachment
+    | typeof AnnouncementOptOut
+    | typeof AnnouncementRecipient
+    | typeof AppBuild
+    | typeof AppEvent
+    | typeof AppGlobal
+    | typeof AppInfo
+    | typeof Approval
+    | typeof ApprovalPath
+    | typeof ApprovalProcess
+    | typeof ApprovalProcessAttachable
+    | typeof ApprovalStep
+    | typeof ApproverStatus
+    | typeof Assignment
+    | typeof AuditLoginAsSession
+    | typeof Authentication
+    | typeof Avatar
+    | typeof AwaitingApproval
+    | typeof BackgroundJob
+    | typeof Baseline
+    | typeof BaselineTask
+    | typeof BillingRecord
+    | typeof Branding
+    | typeof BurndownEvent
+    | typeof CalendarEvent
+    | typeof CalendarFeedEntry
+    | typeof CalendarInfo
+    | typeof CalendarPortalSection
+    | typeof CalendarSection
+    | typeof CallableExpression
+    | typeof CardField
+    | typeof Category
+    | typeof CategoryAccessRule
+    | typeof CategoryCascadeRule
+    | typeof CategoryCascadeRuleMatch
+    | typeof CategoryParameter
+    | typeof CategoryParameterExpression
+    | typeof Company
+    | typeof ComponentKey
+    | typeof ContextSensitiveHelp
+    | typeof CrossProjectPredecessor
+    | typeof CustomEnum
+    | typeof CustomEnumOrder
+    | typeof CustomLabel
+    | typeof CustomMenu
+    | typeof CustomMenuCustomMenu
+    | typeof CustomQuarter
+    | typeof Customer
+    | typeof CustomerDeletion
+    | typeof CustomerFeedback
+    | typeof CustomerPreferences
+    | typeof CustomerTimelineCalc
+    | typeof CustsSections
+    | typeof DocMetadataLink
+    | typeof DocMetadataLinkGroup
+    | typeof DocsFolders
+    | typeof Document
+    | typeof DocumentApproval
+    | typeof DocumentFolder
+    | typeof DocumentProvider
+    | typeof DocumentProviderConfig
+    | typeof DocumentProviderMetadata
+    | typeof DocumentRequest
+    | typeof DocumentShare
+    | typeof DocumentTaskStatus
+    | typeof DocumentVersion
+    | typeof Email
+    | typeof EmailTemplate
+    | typeof Endorsement
+    | typeof EndorsementShare
+    | typeof EventHandler
+    | typeof EventSubscription
+    | typeof EwsFileHandle
+    | typeof ExchangeRate
+    | typeof Expense
+    | typeof ExpenseType
+    | typeof ExternalDocument
+    | typeof ExternalSection
+    | typeof Favorite
+    | typeof Feature
+    | typeof FinancialData
+    | typeof Group
+    | typeof Hour
+    | typeof HourType
+    | typeof IPRange
+    | typeof ImportRow
+    | typeof ImportTemplate
+    | typeof InstalledDDItem
+    | typeof Iteration
+    | typeof JournalEntry
+    | typeof JournalField
+    | typeof KickStart
+    | typeof LayoutTemplate
+    | typeof LayoutTemplateDatePreference
+    | typeof LayoutTemplatePage
+    | typeof LicenseOrder
+    | typeof Like
+    | typeof LinkedFolder
+    | typeof MasterTask
+    | typeof MessageArg
+    | typeof MetaRecord
+    | typeof Milestone
+    | typeof MilestonePath
+    | typeof MobileDevice
+    | typeof NonWorkDay
+    | typeof Note
+    | typeof NoteTag
+    | typeof NotificationPreference
+    | typeof NotificationRecord
+    | typeof ObjectCategory
+    | typeof OpTask
+    | typeof Parameter
+    | typeof ParameterDescriptiveText
+    | typeof ParameterGroup
+    | typeof ParameterOption
+    | typeof ParameterValue
+    | typeof PopAccount
+    | typeof PortalProfile
+    | typeof PortalSection
+    | typeof PortalTab
+    | typeof PortalTabSection
+    | typeof Portfolio
+    | typeof Predecessor
+    | typeof Preference
+    | typeof PrivateCustomerPref
+    | typeof Program
+    | typeof Project
+    | typeof ProjectUser
+    | typeof ProjectUserRole
+    | typeof Proof
+    | typeof ProofApproval
+    | typeof QueueDef
+    | typeof QueueTopic
+    | typeof QueueTopicGroup
+    | typeof Rate
+    | typeof Recent
+    | typeof RecentMenuItem
+    | typeof RecentUpdate
+    | typeof RecurrenceRule
+    | typeof RemovedDocumentVersion
+    | typeof ReportFolder
+    | typeof Reseller
+    | typeof ReservedTime
+    | typeof ResourceAllocation
+    | typeof ResourceContour
+    | typeof ResourceManager
+    | typeof ResourcePool
+    | typeof RsrcPool
+    | typeof ResourceSchedulingFilter
+    | typeof RestorableObject
+    | typeof Risk
+    | typeof RiskType
+    | typeof Role
+    | typeof RoutingRule
+    | typeof S3Migration
+    | typeof SSOMapping
+    | typeof SSOMappingRule
+    | typeof SSOOption
+    | typeof SSOUsername
+    | typeof SandboxMigration
+    | typeof Schedule
+    | typeof ScheduledReport
+    | typeof ScoreCard
+    | typeof ScoreCardAnswer
+    | typeof ScoreCardOption
+    | typeof ScoreCardQuestion
+    | typeof SearchEvent
+    | typeof SecurityAncestor
+    | typeof Sequence
+    | typeof SharingSettings
+    | typeof StepApprover
+    | typeof Task
+    | typeof Team
+    | typeof TeamMember
+    | typeof TeamMemberRole
+    | typeof Template
+    | typeof TemplateAssignment
+    | typeof TemplatePredecessor
+    | typeof TemplateTask
+    | typeof TemplateUser
+    | typeof TemplateUserRole
+    | typeof TimedNotification
+    | typeof Timesheet
+    | typeof TimesheetProfile
+    | typeof TimesheetTemplate
+    | typeof UIFilter
+    | typeof UIGroupBy
+    | typeof UITemplate
+    | typeof UIView
+    | typeof Update
+    | typeof User
+    | typeof UserActivity
+    | typeof UserAvailability
+    | typeof UserDelegation
+    | typeof UserGroups
+    | typeof UserNote
+    | typeof UserObjectPref
+    | typeof UserPrefValue
+    | typeof UserResource
+    | typeof UsersSections
+    | typeof Work
+    | typeof WorkItem

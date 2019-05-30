@@ -35,16 +35,23 @@ console.log(ObjCodes.Baseline)
 
 ```typescript
 // TypeScript type definitions are bundled
-import {TObjCode} from 'workfront-objcodes'
+import {TObjCode, OpTask} from 'workfront-objcodes'
 
 // TS2322: Type '"FOO"' is not assignable to type 'TObjCode' 
-const myObjCode: TObjCode = 'FOO'
+const myObjCode = 'FOO' as const
+
+function useObjCode(code: TObjCode) {
+  // do something
+}
+
+useObjCode(OpTask); // valid
+useObjCode(myObjCode); // not valid
 ```
 
 
 ## License
 
-Copyright (c) 2017 Workfront
+Copyright (c) 2019 Workfront
 
 Licensed under the Apache License, Version 2.0.
 See the top-level file `LICENSE` and
