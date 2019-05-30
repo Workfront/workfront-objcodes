@@ -5,6 +5,7 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "outDir": "./dist",
+    "declaration": true,
     "target": "es5"
   },
   "compileOnSave": false,

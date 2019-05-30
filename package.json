@@ -5,20 +5,16 @@
   "main": "dist/umd/objcodes.js",
   "module": "dist/objcodes.js",
   "jsnext:main": "dist/objcodes.js",
-  "types": "index.d.ts",
+  "types": "dist/objcodes.d.ts",
   "files": [
-    "dist",
-    "index.d.ts",
-    "typings"
+    "dist"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "3.3.3333"
+    "typescript": "3.5.1"
   },
   "scripts": {
-    "prepublish": "npm run build",
-    "build": "tsc --module umd --outDir dist/umd/ src/*.ts && tsc",
-    "test": "exit 0"
+    "prepublishOnly": "npm run build",
+    "build": "rm -rf dist/ && tsc --module umd --outDir dist/umd/ src/*.ts && tsc"
   },
   "repository": {
     "type": "git",
@@ -34,7 +30,8 @@
   ],
   "author": "Workfront",
   "contributors": [
-    "Hovhannes Babayan <bhovhannes@gmail.com>"
+    "Hovhannes Babayan <bhovhannes@gmail.com>",
+    "Wellington Cordeiro <wellington@wellingtoncordeiro.com>"
   ],
   "license": "Apache-2.0",
   "bugs": {
