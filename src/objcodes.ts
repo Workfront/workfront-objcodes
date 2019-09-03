@@ -157,6 +157,7 @@ export const ProjectUser = 'PRTU' as const
 export const ProjectUserRole = 'PTEAM' as const
 export const Proof = 'PROOF' as const
 export const ProofApproval = 'PRFAPL' as const
+export const ProofAction = 'PRFACT' as const
 export const QueueDef = 'QUED' as const
 export const QueueTopic = 'QUET' as const
 export const QueueTopicGroup = 'QUETGP' as const
@@ -373,6 +374,7 @@ export type TObjCode =
     | typeof ProjectUserRole
     | typeof Proof
     | typeof ProofApproval
+    | typeof ProofAction
     | typeof QueueDef
     | typeof QueueTopic
     | typeof QueueTopicGroup
