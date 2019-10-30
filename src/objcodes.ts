@@ -96,6 +96,7 @@ export const Email = 'EMAILC' as const
 export const EmailTemplate = 'EMLTPL' as const
 export const Endorsement = 'ENDR' as const
 export const EndorsementShare = 'ENDSHR' as const
+export const EspPlan = 'ESPPLN' as const
 export const EventHandler = 'EVNTH' as const
 export const EventSubscription = 'EVTSUB' as const
 export const EwsFileHandle = 'EWS' as const
@@ -313,6 +314,7 @@ export type TObjCode =
     | typeof EmailTemplate
     | typeof Endorsement
     | typeof EndorsementShare
+    | typeof EspPlan
     | typeof EventHandler
     | typeof EventSubscription
     | typeof EwsFileHandle
