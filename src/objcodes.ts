@@ -24,6 +24,7 @@ export const AccessScopeAction = 'ASCPAT' as const
 export const AccessToken = 'ACSTOK' as const
 export const AccountRep = 'ACNTRP' as const
 export const Acknowledgement = 'ACK' as const
+export const AgileColumn = 'AGILC' as const
 export const AgileView = 'AGILEV' as const
 export const Announcement = 'ANCMNT' as const
 export const AnnouncementAttachment = 'ANMATT' as const
@@ -242,6 +243,7 @@ export type TObjCode =
     | typeof AccessToken
     | typeof AccountRep
     | typeof Acknowledgement
+    | typeof AgileColumn
     | typeof AgileView
     | typeof Announcement
     | typeof AnnouncementAttachment
