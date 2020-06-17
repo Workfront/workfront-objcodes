@@ -24,6 +24,7 @@ export const AccessScopeAction = 'ASCPAT' as const
 export const AccessToken = 'ACSTOK' as const
 export const AccountRep = 'ACNTRP' as const
 export const Acknowledgement = 'ACK' as const
+export const Activity = 'ACTVTY' as const
 export const AgileColumn = 'AGILC' as const
 export const AgileView = 'AGILEV' as const
 export const Announcement = 'ANCMNT' as const
@@ -109,6 +110,7 @@ export const ExternalSection = 'EXTSEC' as const
 export const Favorite = 'FVRITE' as const
 export const Feature = 'FEATR' as const
 export const FinancialData = 'FINDAT' as const
+export const Goal = 'GOAL' as const
 export const Group = 'GROUP' as const
 export const Hour = 'HOUR' as const
 export const HourType = 'HOURT' as const
@@ -172,6 +174,7 @@ export const RemovedDocumentVersion = 'RMVDOV' as const
 export const ReportFolder = 'RPTFDR' as const
 export const Reseller = 'RSELR' as const
 export const ReservedTime = 'RESVT' as const
+export const Result = 'RESULT' as const
 export const ResourceAllocation = 'RSALLO' as const
 export const ResourceContour = 'RSCONT' as const
 export const ResourceManager = 'RESMGR' as const
@@ -243,6 +246,7 @@ export type TObjCode =
     | typeof AccessToken
     | typeof AccountRep
     | typeof Acknowledgement
+    | typeof Activity
     | typeof AgileColumn
     | typeof AgileView
     | typeof Announcement
@@ -329,6 +333,7 @@ export type TObjCode =
     | typeof Feature
     | typeof FinancialData
     | typeof Group
+    | typeof Goal
     | typeof Hour
     | typeof HourType
     | typeof IPRange
@@ -395,6 +400,7 @@ export type TObjCode =
     | typeof ResourceContour
     | typeof ResourceManager
     | typeof ResourcePool
+    | typeof Result
     | typeof RsrcPool
     | typeof ResourceSchedulingFilter
     | typeof RestorableObject
