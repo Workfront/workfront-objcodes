@@ -26,6 +26,7 @@ export const AccountRep = 'ACNTRP' as const
 export const Acknowledgement = 'ACK' as const
 export const Activity = 'ACTVTY' as const
 export const AgileColumn = 'AGILC' as const
+export const AgileColumnField = 'AGILCF' as const
 export const AgileView = 'AGILEV' as const
 export const Announcement = 'ANCMNT' as const
 export const AnnouncementAttachment = 'ANMATT' as const
