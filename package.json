@@ -10,7 +10,7 @@
     "dist"
   ],
   "devDependencies": {
-    "typescript": "4.9.5"
+    "typescript": "5.0.2"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
