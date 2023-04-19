@@ -168,6 +168,7 @@ export const QueueDef = 'QUED' as const
 export const QueueTopic = 'QUET' as const
 export const QueueTopicGroup = 'QUETGP' as const
 export const Rate = 'RATE' as const
+export const RateCard = 'RTCRD' as const
 export const Recent = 'RECENT' as const
 export const RecentMenuItem = 'RECENTMENUITEM' as const
 export const RecentUpdate = 'RUPDTE' as const
@@ -391,6 +392,7 @@ export type TObjCode =
     | typeof QueueTopic
     | typeof QueueTopicGroup
     | typeof Rate
+    | typeof RateCard
     | typeof Recent
     | typeof RecentMenuItem
     | typeof RecentUpdate
