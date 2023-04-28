@@ -66,6 +66,7 @@ export const CategoryCascadeRule = 'CTCSRL' as const
 export const CategoryCascadeRuleMatch = 'CTCSRM' as const
 export const CategoryParameter = 'CTGYPA' as const
 export const CategoryParameterExpression = 'CTGPEX' as const
+export const Classifier = 'CLSF' as const
 export const Company = 'CMPY' as const
 export const ComponentKey = 'CMPSRV' as const
 export const ContextSensitiveHelp = 'CXTHP' as const
@@ -291,6 +292,7 @@ export type TObjCode =
     | typeof CategoryCascadeRuleMatch
     | typeof CategoryParameter
     | typeof CategoryParameterExpression
+    | typeof Classifier
     | typeof Company
     | typeof ComponentKey
     | typeof ContextSensitiveHelp
