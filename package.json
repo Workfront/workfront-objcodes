@@ -34,6 +34,9 @@
     "Wellington Cordeiro <wellington@wellingtoncordeiro.com>"
   ],
   "license": "Apache-2.0",
+  "engines": {
+    "node": ">=8"
+  },
   "bugs": {
     "url": "https://github.com/Workfront/workfront-objcodes/issues"
   },
