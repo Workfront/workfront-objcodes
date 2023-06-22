@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "devDependencies": {
     "typescript": "5.1.3"
   },
