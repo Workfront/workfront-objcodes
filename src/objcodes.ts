@@ -51,6 +51,7 @@ export const BackgroundJob = 'BKGJOB' as const
 export const Baseline = 'BLIN' as const
 export const BaselineTask = 'BSTSK' as const
 export const BillingRecord = 'BILL' as const
+export const Booking = 'BOOKNG' as const
 export const Branding = 'BRND' as const
 export const BurndownEvent = 'BDNEVT' as const
 export const CalendarEvent = 'CALEVT' as const
@@ -278,6 +279,7 @@ export type TObjCode =
     | typeof Baseline
     | typeof BaselineTask
     | typeof BillingRecord
+    | typeof Booking
     | typeof Branding
     | typeof BurndownEvent
     | typeof CalendarEvent
