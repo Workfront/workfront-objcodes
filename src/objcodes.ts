@@ -138,6 +138,7 @@ export const Milestone = 'MILE' as const
 export const MilestonePath = 'MPATH' as const
 export const MobileDevice = 'MOBILDVC' as const
 export const NonLaborResource = 'NLBR' as const
+export const NonLaborResourceMeasurementUnit = 'NLBRMU' as const
 export const NonWorkDay = 'NONWKD' as const
 export const Note = 'NOTE' as const
 export const NoteTag = 'NTAG' as const
@@ -366,6 +367,7 @@ export type TObjCode =
     | typeof MilestonePath
     | typeof MobileDevice
     | typeof NonLaborResource
+    | typeof NonLaborResourceMeasurementUnit
     | typeof NonWorkDay
     | typeof Note
     | typeof NoteTag
