@@ -54,6 +54,7 @@ export const BillingRecord = 'BILL' as const
 export const Booking = 'BOOKNG' as const
 export const Branding = 'BRND' as const
 export const BurndownEvent = 'BDNEVT' as const
+export const BusinessRules = 'BSNRUL' as const
 export const CalendarEvent = 'CALEVT' as const
 export const CalendarFeedEntry = 'CALITM' as const
 export const CalendarInfo = 'CALEND' as const
@@ -284,6 +285,7 @@ export type TObjCode =
     | typeof Booking
     | typeof Branding
     | typeof BurndownEvent
+    | typeof BusinessRules
     | typeof CalendarEvent
     | typeof CalendarFeedEntry
     | typeof CalendarInfo
