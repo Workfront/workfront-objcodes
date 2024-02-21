@@ -224,6 +224,7 @@ export const TemplateTask = 'TTSK' as const
 export const TemplateUser = 'TMTU' as const
 export const TemplateUserRole = 'TTEAM' as const
 export const TimedNotification = 'TMNOT' as const
+export const TimePhasedReport = 'TPR' as const
 export const Timesheet = 'TSHET' as const
 export const TimesheetProfile = 'TSPRO' as const
 export const TimesheetTemplate = 'TSHTMP' as const
@@ -453,6 +454,7 @@ export type TObjCode =
     | typeof TemplateUser
     | typeof TemplateUserRole
     | typeof TimedNotification
+    | typeof TimePhasedReport
     | typeof Timesheet
     | typeof TimesheetProfile
     | typeof TimesheetTemplate
