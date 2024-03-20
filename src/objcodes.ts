@@ -242,6 +242,7 @@ export const UserNote = 'USRNOT' as const
 export const UserObjectPref = 'USOP' as const
 export const UserPrefValue = 'USERPF' as const
 export const UserResource = 'USERRS' as const
+export const UserRole = 'USRROL' as const
 export const UsersSections = 'USRSEC' as const
 export const Work = 'WORK' as const
 export const WorkItem = 'WRKITM' as const
@@ -472,6 +473,7 @@ export type TObjCode =
     | typeof UserObjectPref
     | typeof UserPrefValue
     | typeof UserResource
+    | typeof UserRole
     | typeof UsersSections
     | typeof Work
     | typeof WorkItem
