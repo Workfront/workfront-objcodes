@@ -55,7 +55,7 @@ export const BudgetedHours = 'BGHR' as const
 export const Booking = 'BOOKNG' as const
 export const Branding = 'BRND' as const
 export const BurndownEvent = 'BDNEVT' as const
-export const BusinessProfile = "BSNPRF" as const
+export const BusinessProfile = 'BSNPRF' as const
 export const BusinessRules = 'BSNRUL' as const
 export const CalendarEvent = 'CALEVT' as const
 export const CalendarFeedEntry = 'CALITM' as const
@@ -243,6 +243,7 @@ export const UserGroups = 'USRGPS' as const
 export const UserNote = 'USRNOT' as const
 export const UserObjectPref = 'USOP' as const
 export const UserPrefValue = 'USERPF' as const
+export const UserBusinessProfile = 'USRBP' as const
 export const UserResource = 'USERRS' as const
 export const UserRole = 'USRROL' as const
 export const UsersSections = 'USRSEC' as const
@@ -471,6 +472,7 @@ export type TObjCode =
     | typeof User
     | typeof UserActivity
     | typeof UserAvailability
+    | typeof UserBusinessProfile
     | typeof UserDelegation
     | typeof UserGroups
     | typeof UserNote
