@@ -167,6 +167,7 @@ export const Preference = 'PROSET' as const
 export const PrivateCustomerPref = 'PCPREF' as const
 export const Program = 'PRGM' as const
 export const Project = 'PROJ' as const
+export const ProjectSnapshot = 'SNPSH' as const
 export const ProjectUser = 'PRTU' as const
 export const ProjectUserRole = 'PTEAM' as const
 export const Proof = 'PROOF' as const
@@ -213,6 +214,7 @@ export const SearchEvent = 'SRCEVT' as const
 export const SecurityAncestor = 'SECANC' as const
 export const Sequence = 'SEQ' as const
 export const SharingSettings = 'SHRSET' as const
+export const StaffingPlan = 'STAFFP' as const
 export const StepApprover = 'SPAPVR' as const
 export const Task = 'TASK' as const
 export const TaskBack = 'TASKBACK' as const
@@ -402,6 +404,7 @@ export type TObjCode =
     | typeof PrivateCustomerPref
     | typeof Program
     | typeof Project
+    | typeof ProjectSnapshot
     | typeof ProjectUser
     | typeof ProjectUserRole
     | typeof Proof
@@ -448,6 +451,7 @@ export type TObjCode =
     | typeof SecurityAncestor
     | typeof Sequence
     | typeof SharingSettings
+    | typeof StaffingPlan
     | typeof StepApprover
     | typeof Task
     | typeof Team
