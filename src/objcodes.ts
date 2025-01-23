@@ -53,6 +53,7 @@ export const BaselineTask = 'BSTSK' as const
 export const BillingRecord = 'BILL' as const
 export const BudgetedHours = 'BGHR' as const
 export const Booking = 'BOOKNG' as const
+export const BookingTemplate = 'BOOKTL' as const
 export const Branding = 'BRND' as const
 export const BurndownEvent = 'BDNEVT' as const
 export const BusinessProfile = 'BSNPRF' as const
@@ -291,6 +292,7 @@ export type TObjCode =
     | typeof BillingRecord
     | typeof BudgetedHours
     | typeof Booking
+    | typeof BookingTemplate
     | typeof Branding
     | typeof BurndownEvent
     | typeof BusinessProfile
