@@ -194,6 +194,7 @@ export const ResourceManager = 'RESMGR' as const
 export const ResourcePool = 'RSPOOL' as const
 export const RsrcPool = 'RSPL' as const
 export const ResourceSchedulingFilter = 'RSFT' as const
+export const ResourceBillingOverride = 'RSBLOR' as const
 export const RestorableObject = 'RSTOBJ' as const
 export const Risk = 'RISK' as const
 export const RiskType = 'RSKTYP' as const
@@ -432,6 +433,7 @@ export type TObjCode =
     | typeof Result
     | typeof RsrcPool
     | typeof ResourceSchedulingFilter
+    | typeof ResourceBillingOverride
     | typeof RestorableObject
     | typeof Risk
     | typeof RiskType
