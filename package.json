@@ -1,6 +1,6 @@
 {
   "name": "workfront-objcodes",
-  "version": "1.15.0",
+  "version": "1.25.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/umd/objcodes.js",
   "module": "dist/objcodes.js",
@@ -11,7 +11,7 @@
   ],
   "sideEffects": false,
   "devDependencies": {
-    "typescript": "5.1.6"
+    "typescript": "5.7.3"
   },
   "scripts": {
     "prepublishOnly": "npm run build",

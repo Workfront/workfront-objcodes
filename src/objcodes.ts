@@ -51,9 +51,13 @@ export const BackgroundJob = 'BKGJOB' as const
 export const Baseline = 'BLIN' as const
 export const BaselineTask = 'BSTSK' as const
 export const BillingRecord = 'BILL' as const
+export const BudgetedHours = 'BGHR' as const
 export const Booking = 'BOOKNG' as const
+export const BookingTemplate = 'BOOKTL' as const
 export const Branding = 'BRND' as const
 export const BurndownEvent = 'BDNEVT' as const
+export const BusinessProfile = 'BSNPRF' as const
+export const BusinessRules = 'BSNRUL' as const
 export const CalendarEvent = 'CALEVT' as const
 export const CalendarFeedEntry = 'CALITM' as const
 export const CalendarInfo = 'CALEND' as const
@@ -138,6 +142,7 @@ export const Milestone = 'MILE' as const
 export const MilestonePath = 'MPATH' as const
 export const MobileDevice = 'MOBILDVC' as const
 export const NonLaborResource = 'NLBR' as const
+export const NonLaborResourceCategory = 'NLBRCY' as const
 export const NonLaborResourceMeasurementUnit = 'NLBRMU' as const
 export const NonWorkDay = 'NONWKD' as const
 export const Note = 'NOTE' as const
@@ -163,6 +168,7 @@ export const Preference = 'PROSET' as const
 export const PrivateCustomerPref = 'PCPREF' as const
 export const Program = 'PRGM' as const
 export const Project = 'PROJ' as const
+export const ProjectSnapshot = 'SNPSH' as const
 export const ProjectUser = 'PRTU' as const
 export const ProjectUserRole = 'PTEAM' as const
 export const Proof = 'PROOF' as const
@@ -210,6 +216,7 @@ export const SearchEvent = 'SRCEVT' as const
 export const SecurityAncestor = 'SECANC' as const
 export const Sequence = 'SEQ' as const
 export const SharingSettings = 'SHRSET' as const
+export const StaffingPlan = 'STAFFP' as const
 export const StepApprover = 'SPAPVR' as const
 export const Task = 'TASK' as const
 export const TaskBack = 'TASKBACK' as const
@@ -223,6 +230,7 @@ export const TemplateTask = 'TTSK' as const
 export const TemplateUser = 'TMTU' as const
 export const TemplateUserRole = 'TTEAM' as const
 export const TimedNotification = 'TMNOT' as const
+export const TimePhasedReport = 'TPR' as const
 export const Timesheet = 'TSHET' as const
 export const TimesheetProfile = 'TSPRO' as const
 export const TimesheetTemplate = 'TSHTMP' as const
@@ -239,7 +247,9 @@ export const UserGroups = 'USRGPS' as const
 export const UserNote = 'USRNOT' as const
 export const UserObjectPref = 'USOP' as const
 export const UserPrefValue = 'USERPF' as const
+export const UserBusinessProfile = 'USRBP' as const
 export const UserResource = 'USERRS' as const
+export const UserRole = 'USRROL' as const
 export const UsersSections = 'USRSEC' as const
 export const Work = 'WORK' as const
 export const WorkItem = 'WRKITM' as const
@@ -281,9 +291,13 @@ export type TObjCode =
     | typeof Baseline
     | typeof BaselineTask
     | typeof BillingRecord
+    | typeof BudgetedHours
     | typeof Booking
+    | typeof BookingTemplate
     | typeof Branding
     | typeof BurndownEvent
+    | typeof BusinessProfile
+    | typeof BusinessRules
     | typeof CalendarEvent
     | typeof CalendarFeedEntry
     | typeof CalendarInfo
@@ -368,6 +382,7 @@ export type TObjCode =
     | typeof MilestonePath
     | typeof MobileDevice
     | typeof NonLaborResource
+    | typeof NonLaborResourceCategory
     | typeof NonLaborResourceMeasurementUnit
     | typeof NonWorkDay
     | typeof Note
@@ -392,6 +407,7 @@ export type TObjCode =
     | typeof PrivateCustomerPref
     | typeof Program
     | typeof Project
+    | typeof ProjectSnapshot
     | typeof ProjectUser
     | typeof ProjectUserRole
     | typeof Proof
@@ -439,6 +455,7 @@ export type TObjCode =
     | typeof SecurityAncestor
     | typeof Sequence
     | typeof SharingSettings
+    | typeof StaffingPlan
     | typeof StepApprover
     | typeof Task
     | typeof Team
@@ -451,6 +468,7 @@ export type TObjCode =
     | typeof TemplateUser
     | typeof TemplateUserRole
     | typeof TimedNotification
+    | typeof TimePhasedReport
     | typeof Timesheet
     | typeof TimesheetProfile
     | typeof TimesheetTemplate
@@ -462,12 +480,14 @@ export type TObjCode =
     | typeof User
     | typeof UserActivity
     | typeof UserAvailability
+    | typeof UserBusinessProfile
     | typeof UserDelegation
     | typeof UserGroups
     | typeof UserNote
     | typeof UserObjectPref
     | typeof UserPrefValue
     | typeof UserResource
+    | typeof UserRole
     | typeof UsersSections
     | typeof Work
     | typeof WorkItem
