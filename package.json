@@ -7,7 +7,8 @@
   "jsnext:main": "dist/objcodes.js",
   "types": "dist/objcodes.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "sideEffects": false,
   "devDependencies": {
