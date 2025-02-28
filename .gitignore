@@ -17,3 +17,6 @@ coverage
 
 # generated folder
 dist
+
+# OS-specfiic files
+.DS_Store
