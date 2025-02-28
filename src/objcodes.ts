@@ -253,6 +253,7 @@ export const UserRole = 'USRROL' as const
 export const UsersSections = 'USRSEC' as const
 export const Work = 'WORK' as const
 export const WorkItem = 'WRKITM' as const
+export const StaffingPlanResource = 'STAFFR' as const
 
 export type TObjCode =
     | typeof AccessLevel
@@ -491,3 +492,4 @@ export type TObjCode =
     | typeof UsersSections
     | typeof Work
     | typeof WorkItem
+    | typeof StaffingPlanResource
