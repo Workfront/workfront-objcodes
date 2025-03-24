@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 export const AccessLevel = 'ACSLVL' as const
 export const AccessLevelPermissions = 'ALVPER' as const
 export const AccessRequest = 'ACSREQ' as const
