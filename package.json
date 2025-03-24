@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Workfront/workfront-objcodes.git"
+    "url": "git+https://github.com/Workfront/workfront-objcodes.git"
   },
   "keywords": [
     "Workfront",
