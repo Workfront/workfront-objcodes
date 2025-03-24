@@ -1,6 +1,6 @@
-# workfront-objcodes
+# @workfront/objcodes
 
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Apache v2 License][license-image]][license-url] [![Build Status][travis-image]][travis-url]
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-url] [![Apache v2 License][license-image]][license-url]
 
 Definitions for object codes to be used with Workfront API
 
@@ -20,14 +20,14 @@ The code inside `dist/objcodes.js` is in ES5, so you don't need transpilers to u
 ### Examples
 
 ```javascript
-import {Baseline} from 'workfront-objcodes'
+import {Baseline} from '@workfront/objcodes'
 
 // output 'BLIN'
 console.log(Baseline)
 ```
 
 ```javascript
-import * as ObjCodes from 'workfront-objcodes'
+import * as ObjCodes from '@workfront/objcodes'
 
 // outputs 'BLIN'
 console.log(ObjCodes.Baseline)
@@ -35,7 +35,7 @@ console.log(ObjCodes.Baseline)
 
 ```typescript
 // TypeScript type definitions are bundled
-import {TObjCode, OpTask} from 'workfront-objcodes'
+import {TObjCode, OpTask} from '@workfront/objcodes'
 
 // TS2322: Type '"FOO"' is not assignable to type 'TObjCode' 
 const myObjCode: TObjCode = 'FOO'
@@ -65,9 +65,6 @@ See the top-level file `LICENSE` and
 [license-image]: http://img.shields.io/badge/license-APv2-blue.svg?style=flat
 [license-url]: LICENSE
 
-[npm-url]: https://www.npmjs.org/package/workfront-objcodes
-[npm-version-image]: https://img.shields.io/npm/v/workfront-objcodes.svg?style=flat
-[npm-downloads-image]: https://img.shields.io/npm/dm/workfront-objcodes.svg?style=flat
-
-[travis-url]: https://travis-ci.org/Workfront/workfront-objcodes
-[travis-image]: https://img.shields.io/travis/Workfront/workfront-objcodes.svg?style=flat
+[npm-url]: https://www.npmjs.org/package/@workfront/objcodes
+[npm-version-image]: https://img.shields.io/npm/v/@workfront/objcodes.svg?style=flat
+[npm-downloads-image]: https://img.shields.io/npm/dm/@workfront/objcodes.svg?style=flat
