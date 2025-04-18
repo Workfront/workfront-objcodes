@@ -154,6 +154,7 @@ export const OpTask = 'OPTASK' as const
 export const OpTaskBack = 'OPTASKBACK' as const
 export const Parameter = 'PARAM' as const
 export const ParameterDescriptiveText = 'PRMDTX' as const
+export const ParameterFilter = "PARMFT" as const
 export const ParameterGroup = 'PGRP' as const
 export const ParameterOption = 'POPT' as const
 export const ParameterValue = 'PVAL' as const
@@ -268,6 +269,7 @@ export type TObjCode =
     | typeof Acknowledgement
     | typeof Activity
     | typeof AgileColumn
+    | typeof AgileColumnField
     | typeof AgileView
     | typeof Announcement
     | typeof AnnouncementAttachment
@@ -392,8 +394,10 @@ export type TObjCode =
     | typeof NotificationRecord
     | typeof ObjectCategory
     | typeof OpTask
+    | typeof OpTaskBack
     | typeof Parameter
     | typeof ParameterDescriptiveText
+    | typeof ParameterFilter
     | typeof ParameterGroup
     | typeof ParameterOption
     | typeof ParameterValue
@@ -459,6 +463,7 @@ export type TObjCode =
     | typeof StaffingPlan
     | typeof StepApprover
     | typeof Task
+    | typeof TaskBack
     | typeof Team
     | typeof TeamMember
     | typeof TeamMemberRole
