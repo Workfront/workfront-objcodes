@@ -221,6 +221,7 @@ export const StaffingPlan = 'STAFFP' as const
 export const StepApprover = 'SPAPVR' as const
 export const Task = 'TASK' as const
 export const TaskBack = 'TASKBACK' as const
+export const TaskDef = 'TSKDEF' as const
 export const Team = 'TEAMOB' as const
 export const TeamMember = 'TEAMMB' as const
 export const TeamMemberRole = 'TEAMMR' as const
@@ -464,6 +465,7 @@ export type TObjCode =
     | typeof StepApprover
     | typeof Task
     | typeof TaskBack
+    | typeof TaskDef
     | typeof Team
     | typeof TeamMember
     | typeof TeamMemberRole
