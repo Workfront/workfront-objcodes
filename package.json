@@ -1,6 +1,6 @@
 {
   "name": "@workfront/objcodes",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Definitions for all constants which can be used to interact with Workfront API",
   "main": "dist/umd/objcodes.js",
   "module": "dist/objcodes.js",
