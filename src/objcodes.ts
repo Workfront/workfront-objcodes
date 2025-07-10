@@ -236,6 +236,7 @@ export const TimesheetProfile = 'TSPRO' as const
 export const TimesheetTemplate = 'TSHTMP' as const
 export const UIFilter = 'UIFT' as const
 export const UIGroupBy = 'UIGB' as const
+export const UIGView = 'UIGVW' as const
 export const UITemplate = 'UITMPL' as const
 export const UIView = 'UIVW' as const
 export const Update = 'UPDATE' as const
@@ -475,6 +476,7 @@ export type TObjCode =
     | typeof TimesheetTemplate
     | typeof UIFilter
     | typeof UIGroupBy
+    | typeof UIGView
     | typeof UITemplate
     | typeof UIView
     | typeof Update
