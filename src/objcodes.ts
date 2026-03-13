@@ -117,6 +117,7 @@ export const ExternalSection = 'EXTSEC' as const
 export const Favorite = 'FVRITE' as const
 export const Feature = 'FEATR' as const
 export const FinancialData = 'FINDAT' as const
+export const FormulaConstant = 'FCONST' as const
 export const Goal = 'GOAL' as const
 export const Group = 'GROUP' as const
 export const Hour = 'HOUR' as const
@@ -364,6 +365,7 @@ export type TObjCode =
     | typeof Favorite
     | typeof Feature
     | typeof FinancialData
+    | typeof FormulaConstant
     | typeof Group
     | typeof Goal
     | typeof Hour
