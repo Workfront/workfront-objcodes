@@ -194,6 +194,7 @@ export const Result = 'RESULT' as const
 export const ResourceAllocation = 'RSALLO' as const
 export const ResourceContour = 'RSCONT' as const
 export const ResourceManager = 'RESMGR' as const
+export const ResourcePlannerFilter = 'RPFL' as const
 export const ResourcePool = 'RSPOOL' as const
 export const RsrcPool = 'RSPL' as const
 export const ResourceSchedulingFilter = 'RSFT' as const
@@ -441,6 +442,7 @@ export type TObjCode =
     | typeof ResourceAllocation
     | typeof ResourceContour
     | typeof ResourceManager
+    | typeof ResourcePlannerFilter
     | typeof ResourcePool
     | typeof Result
     | typeof RsrcPool
