@@ -144,6 +144,7 @@ export const MilestonePath = 'MPATH' as const
 export const MobileDevice = 'MOBILDVC' as const
 export const NonLaborResource = 'NLBR' as const
 export const NonLaborResourceCategory = 'NLBRCY' as const
+export const NonLaborResourceGroup = 'NLBRGP' as const
 export const NonLaborResourceMeasurementUnit = 'NLBRMU' as const
 export const NonWorkDay = 'NONWKD' as const
 export const Note = 'NOTE' as const
@@ -181,6 +182,8 @@ export const QueueTopic = 'QUET' as const
 export const QueueTopicGroup = 'QUETGP' as const
 export const Rate = 'RATE' as const
 export const RateCard = 'RTCRD' as const
+export const RateCardCompany = 'RCCMPS' as const
+export const RateCardGroup = 'RCGPS' as const
 export const RateAttributes = 'RTATTR' as const
 export const Recent = 'RECENT' as const
 export const RecentMenuItem = 'RECENTMENUITEM' as const
@@ -257,6 +260,7 @@ export const UserPrefValue = 'USERPF' as const
 export const UserBusinessProfile = 'USRBP' as const
 export const UserResource = 'USERRS' as const
 export const UserRole = 'USRROL' as const
+export const UserRoleSet = 'URSET' as const
 export const UsersSections = 'USRSEC' as const
 export const Work = 'WORK' as const
 export const WorkItem = 'WRKITM' as const
@@ -393,6 +397,7 @@ export type TObjCode =
     | typeof MobileDevice
     | typeof NonLaborResource
     | typeof NonLaborResourceCategory
+    | typeof NonLaborResourceGroup
     | typeof NonLaborResourceMeasurementUnit
     | typeof NonWorkDay
     | typeof Note
@@ -430,6 +435,8 @@ export type TObjCode =
     | typeof QueueTopicGroup
     | typeof Rate
     | typeof RateCard
+    | typeof RateCardCompany
+    | typeof RateCardGroup
     | typeof RateAttributes
     | typeof Recent
     | typeof RecentMenuItem
@@ -506,6 +513,7 @@ export type TObjCode =
     | typeof UserPrefValue
     | typeof UserResource
     | typeof UserRole
+    | typeof UserRoleSet
     | typeof UsersSections
     | typeof Work
     | typeof WorkItem
