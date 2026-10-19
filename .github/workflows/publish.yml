@@ -45,7 +45,7 @@ jobs:
           npm version --no-commit-hooks ${{ github.event.inputs.SEMVER_TYPE }}
           git push origin main --follow-tags
       - name: Publish to NPM
-        run: npm publish --provenance --access public
+        run: npm stage publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
